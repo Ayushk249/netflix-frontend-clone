@@ -1,0 +1,113 @@
+:root{
+    --primary-colour: #EA0A15;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: grey;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+     /* to remove underlines */
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+}
+
+.showcase-top{
+    position: relative;
+    /* making image relative to the parent */
+    height: 90px;
+}
+
+.showcase-top img{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* to position the element to the centre */
+
+}
+
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/* buttons */
+.btn {
+    display: inline-block;
+    /* elements are presented in block in a line in which height and width could be changed  */
+    background: var(--primary-colour);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    /* top right bottom left */
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    margin-right: 0.5rem;
+    /* in case buttons are put inline next to each other */
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    border-radius: 2px;
+
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-rounded{
+    border-radius: 6px;
+}
+
+.btn-xl{
+    font-size: 2rem;
+    /* 1 rem is 16 px */
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+}
+
+.btn-lg{
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+}
