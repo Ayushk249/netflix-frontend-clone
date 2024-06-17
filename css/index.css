@@ -124,6 +124,7 @@ img{
 .tab-content{
     padding: 3rem 0;
     background: black;
+    border-bottom: 4px solid #434141ff;
 }
 
 
@@ -178,6 +179,65 @@ img{
 }
 
 
+.tab2-content-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.2rem;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+
+
+.tab2-content-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.tab3-content-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.2rem;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+
+
+.table{
+    width: 100%;
+    margin-top: 2rem;
+    border-spacing: 0;
+}
+
+.table thead th{
+    text-transform: uppercase;
+    padding: 0.6rem;
+}
+
+.table tbody tr td {
+    color: #999;
+    padding: 0.8rem 1rem;
+    text-align: center;
+}
+
+/* we do not want text centering in first column  */
+.table tbody tr td:first-child{
+    text-align: left;
+
+}
+
+
+.table tbody tr:nth-child(odd){
+    background: rgb(38, 38, 38);
+}
+
+
 
 /* container */
 .container{
@@ -227,13 +287,10 @@ img{
 
 .btn-lg{
     font-size: 1.5rem;
-    padding: 1rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     text-transform: uppercase;
+    margin: auto;
 }
-
-
-
-
 
 
 /* Text styles */
@@ -245,7 +302,46 @@ img{
 }
 
 .text-lg{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     color: white;
+}
+
+.text-md{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* Footer */
+
+.footer{
+max-width: 80%;
+margin: 4rem auto;
+overflow: auto;
+padding-bottom: 5rem;
+}
+
+.footer, .footer a{
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer-cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+}
+
+
+.footer-cols li{
+    line-height: 2rem;
+    text-decoration: underline;
 }
