@@ -4,10 +4,7 @@ const tabIcons = document.querySelectorAll('.tab-item');
 const tabContents = document.querySelectorAll('.tab-content-item');
 
 
-tabIcons.forEach((tabIcon) => {console.log(tabIcon)});
-
 const selectItem = (event) => {
-
     // removing border from all tabs
     removeBorder();
     // adding red border to current tab
@@ -17,14 +14,13 @@ const selectItem = (event) => {
     TabElementId = TabElement.id;
     contentId = TabElementId + '-content';
 
-
     tabContents.forEach((tabContent) => {tabContent.id === contentId ? tabContent.classList.add('show') : tabContent.classList.remove('show')});
 }
+
 
 const removeBorder = () => {
     tabIcons.forEach(tabIcon => tabIcon.classList.remove('tab-border'));
 }
 
-
-
+// Adding event listener to all tab icons
 tabIcons.forEach(tabIcon => tabIcon.addEventListener('click',selectItem));
