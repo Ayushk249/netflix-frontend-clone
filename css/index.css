@@ -121,6 +121,16 @@ img{
 /* tabs */
 
 
+#tab1-content,#tab2-content,#tab3-content{
+    display: none;
+}
+
+
+/* This class would be added upon selecting specific tab content */
+.show{
+    display: block !important; 
+}
+
 .tab-content{
     padding: 3rem 0;
     background: black;
